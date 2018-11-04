@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "15018085317",
+    "firebase_url": "https://saibot-17b00.firebaseio.com",
+    "project_id": "saibot-17b00",
+    "storage_bucket": "saibot-17b00.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15018085317:android:94963681038b56a9",
+        "android_client_info": {
+          "package_name": "june.delachica.com.sai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "15018085317-a35uet33hng2qaj483dhoputhltd107b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "june.delachica.com.sai",
+            "certificate_hash": "c48c51c7a14588deec617fa9d5e12a1321f5987c"
+          }
+        },
+        {
+          "client_id": "15018085317-gbo22an38q4f5el4n6bqbik60lrcc14j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABjl_sBTFDqDTZWgw2rb3qYtr1VPYcqWg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "15018085317-gbo22an38q4f5el4n6bqbik60lrcc14j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

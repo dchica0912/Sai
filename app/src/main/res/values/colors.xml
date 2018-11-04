@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#7b1fa2</color>
+    <color name="colorPrimaryDark">#4a0072</color>
+    <color name="colorAccent">#fff</color>
+    <color name="colorChatLight">#ae52d4</color>
+    <color name="colorPrimaryLight">#1df41d</color>
+    <color name="colorPrimaryLightOne">#1bd4ec</color>
+    <color name="colorPrimaryLightTwo">#f2dc11</color>
+    <color name="editText">#aeaeae</color>
+
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/navChatSai"
+            android:icon="@drawable/icon_home_chat"
+            android:title="Chat Sai"/>
+        <item android:id="@+id/navTrackMood"
+            android:icon="@drawable/icon_emoticon"
+            android:title="Track Mood"/>
+        <item android:id="@+id/navJournal"
+            android:icon="@drawable/icon_add_note"
+            android:title="My Thoughts"/>
+
+    </group>
+
+</menu>

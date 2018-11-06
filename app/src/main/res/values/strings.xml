@@ -9,6 +9,10 @@
     <string name="time">1:15 AM</string>
     <string name="navigation_drawer_open">Open Navigation Drawer</string>
     <string name="navigation_drawer_close">Close Navigation Drawer</string>
+    <string name="check_email">Check your email</string>
+    <string name="check_email_sub">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when specimen book. It has
+    </string>
 
 
 </resources>

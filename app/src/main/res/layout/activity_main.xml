@@ -1,160 +1,192 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity"
+    tools:openDrawer="start">
 
-
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:padding="10dp">
+        android:orientation="vertical">
 
-        <LinearLayout
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:clipToPadding="false"
-            android:gravity="center">
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
-            <android.support.v7.widget.CardView
-                android:id="@+id/chatSai"
-                android:layout_width="160dp"
-                android:layout_height="190dp"
-                android:layout_margin="10dp"
-                android:clickable="true"
-                android:foreground="?android:attr/selectableItemBackground">
-
-                <LinearLayout
-
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="64dp"
-                        android:layout_height="64dp"
-                        android:background="@drawable/ovalgreen"
-                        android:padding="10dp"
-                        android:src="@drawable/icon_home_chat" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:text="Chat Sai"
-                        android:textStyle="bold" />
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_margin="10dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:padding="5dp"
-                        android:text="Sai is always ready to chat with you!" />
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="160dp"
-                android:layout_height="190dp"
-                android:layout_margin="10dp"
-                android:clickable="true"
-                android:foreground="?android:attr/selectableItemBackground">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="64dp"
-                        android:layout_height="64dp"
-                        android:background="@drawable/ovalyellow"
-                        android:padding="10dp"
-                        android:src="@drawable/icon_emoticon" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:text="Mood Tracker"
-                        android:textStyle="bold" />
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_margin="10dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:padding="5dp"
-                        android:text="Check your mood!" />
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
-        </LinearLayout>
-
-        <LinearLayout
+        <FrameLayout
+            android:id="@+id/fragment_container"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:clipToPadding="false"
-            android:gravity="center">
+            android:layout_height="match_parent">
 
-            <android.support.v7.widget.CardView
-                android:id="@+id/thoughtJournal"
-                android:layout_width="160dp"
-                android:layout_height="190dp"
-                android:layout_margin="10dp"
-                android:clickable="true"
-                android:foreground="?android:attr/selectableItemBackground">
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:gravity="center"-->
+                <!--android:orientation="vertical"-->
+                <!--android:padding="10dp">-->
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical">
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:clipToPadding="false"-->
+                    <!--android:gravity="center">-->
 
-                    <ImageView
-                        android:layout_width="64dp"
-                        android:layout_height="64dp"
-                        android:background="@drawable/ovalblue"
-                        android:padding="10dp"
-                        android:src="@drawable/icon_add_note" />
+                    <!--<android.support.v7.widget.CardView-->
+                        <!--android:id="@+id/chatSai"-->
+                        <!--android:layout_width="160dp"-->
+                        <!--android:layout_height="190dp"-->
+                        <!--android:layout_margin="10dp"-->
+                        <!--android:clickable="true"-->
+                        <!--android:foreground="?android:attr/selectableItemBackground">-->
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:text="Thought Diary"
-                        android:textStyle="bold" />
+                        <!--<LinearLayout-->
 
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_margin="10dp" />
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="center"-->
+                            <!--android:orientation="vertical">-->
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:padding="5dp"
-                        android:text="Got something in mind? Write it down!" />
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
-        </LinearLayout>
+                            <!--<ImageView-->
+                                <!--android:layout_width="64dp"-->
+                                <!--android:layout_height="64dp"-->
+                                <!--android:background="@drawable/ovalgreen"-->
+                                <!--android:padding="10dp"-->
+                                <!--android:src="@drawable/icon_home_chat" />-->
+
+                            <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_marginTop="10dp"-->
+                                <!--android:text="Chat Sai"-->
+                                <!--android:textStyle="bold" />-->
+
+                            <!--<View-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="1dp"-->
+                                <!--android:layout_margin="10dp" />-->
+
+                            <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:gravity="center"-->
+                                <!--android:padding="5dp"-->
+                                <!--android:text="Sai is always ready to chat with you!" />-->
+                        <!--</LinearLayout>-->
+                    <!--</android.support.v7.widget.CardView>-->
+
+                    <!--<android.support.v7.widget.CardView-->
+                        <!--android:layout_width="160dp"-->
+                        <!--android:layout_height="190dp"-->
+                        <!--android:layout_margin="10dp"-->
+                        <!--android:clickable="true"-->
+                        <!--android:foreground="?android:attr/selectableItemBackground">-->
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="center"-->
+                            <!--android:orientation="vertical">-->
+
+                            <!--<ImageView-->
+                                <!--android:layout_width="64dp"-->
+                                <!--android:layout_height="64dp"-->
+                                <!--android:background="@drawable/ovalyellow"-->
+                                <!--android:padding="10dp"-->
+                                <!--android:src="@drawable/icon_emoticon" />-->
+
+                            <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_marginTop="10dp"-->
+                                <!--android:text="Mood Tracker"-->
+                                <!--android:textStyle="bold" />-->
+
+                            <!--<View-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="1dp"-->
+                                <!--android:layout_margin="10dp" />-->
+
+                            <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:gravity="center"-->
+                                <!--android:padding="5dp"-->
+                                <!--android:text="Check your mood!" />-->
+                        <!--</LinearLayout>-->
+                    <!--</android.support.v7.widget.CardView>-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:clipToPadding="false"-->
+                    <!--android:gravity="center">-->
+
+                    <!--<android.support.v7.widget.CardView-->
+                        <!--android:id="@+id/thoughtJournal"-->
+                        <!--android:layout_width="160dp"-->
+                        <!--android:layout_height="190dp"-->
+                        <!--android:layout_margin="10dp"-->
+                        <!--android:clickable="true"-->
+                        <!--android:foreground="?android:attr/selectableItemBackground">-->
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="center"-->
+                            <!--android:orientation="vertical">-->
+
+                            <!--<ImageView-->
+                                <!--android:layout_width="64dp"-->
+                                <!--android:layout_height="64dp"-->
+                                <!--android:background="@drawable/ovalblue"-->
+                                <!--android:padding="10dp"-->
+                                <!--android:src="@drawable/icon_add_note" />-->
+
+                            <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_marginTop="10dp"-->
+                                <!--android:text="Thought Diary"-->
+                                <!--android:textStyle="bold" />-->
+
+                            <!--<View-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="1dp"-->
+                                <!--android:layout_margin="10dp" />-->
+
+                            <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:gravity="center"-->
+                                <!--android:padding="5dp"-->
+                                <!--android:text="Got something in mind? Write it down!" />-->
+                        <!--</LinearLayout>-->
+                    <!--</android.support.v7.widget.CardView>-->
+                <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+
+        </FrameLayout>
+
+
     </LinearLayout>
-</LinearLayout>
+
+    <android.support.design.widget.NavigationView
+    android:id="@+id/nav_view"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    app:headerLayout="@layout/nav_header"
+    app:menu="@menu/drawer_menu" />
+
+</android.support.v4.widget.DrawerLayout>

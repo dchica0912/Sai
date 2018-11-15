@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="50dp"
-
+    android:background="@color/background"
     tools:context=".Login">
 
     <LinearLayout
@@ -59,8 +59,8 @@
             android:maxLines="1"
             android:padding="8dp"
             android:paddingBottom="20dp"
-            android:textColor="#000"
-            android:textColorHint="#adaeaeae"
+            android:textColorHint="@color/textHint"
+            android:textColor="@color/darkGrey"
             android:textSize="18sp" />
     </LinearLayout>
 
@@ -90,7 +90,7 @@
             android:maxLines="1"
             android:padding="8dp"
             android:paddingBottom="20dp"
-            android:textColor="#000"
+            android:textColor="@color/textHint"
             android:textColorHint="#adaeaeae"
             android:textSize="18sp" />
     </LinearLayout>
@@ -136,6 +136,7 @@
             android:layout_height="wrap_content"
             android:text="Haven't talked to Sai yet??"
             android:layout_alignParentEnd="true"
+            android:id="@+id/register"
             android:textSize="15sp"
             />
 

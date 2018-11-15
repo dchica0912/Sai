@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">Talk to Sai</string>
+    <string name="app_name"></string>
     <string name="writeDiaryTitle">How\'s your day going, Paps?</string>
     <string name="writeDiaryBody">We want to know what\'s going on with you! Care to share it with us?</string>
-    <string name="writeDiarySave">Save My Thought</string>
+    <string name="writeDiarySave">SAVE MY THOUGHT</string>
     <string name="date">31</string>
     <string name="year">2018</string>
     <string name="month">OCT</string>
@@ -13,6 +13,27 @@
     <string name="check_email_sub">
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when specimen book. It has
     </string>
+    <string name="myThoughts">My Thoughts</string>
 
 
+    <string-array name="months">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Prefer not to answer</item>
+    </string-array>
 </resources>

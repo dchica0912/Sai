@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#7b1fa2</color>
+    <color name="colorPrimary">#8277cb</color>
     <color name="colorPrimaryDark">#4a0072</color>
     <color name="colorAccent">#fff</color>
     <color name="colorChatLight">#ae52d4</color>
@@ -8,5 +8,13 @@
     <color name="colorPrimaryLightOne">#1bd4ec</color>
     <color name="colorPrimaryLightTwo">#f2dc11</color>
     <color name="editText">#aeaeae</color>
+
+
+    <color name="background">#f4f2fb</color>
+    <color name="lightViolet">#a0b7ff</color>
+    <color name="violet">#8277cb</color>
+    <color name="darkGrey">#414953</color>
+    <color name="whiteText">#fff</color>
+    <color name="textHint">#5c554d</color>
 
 </resources>

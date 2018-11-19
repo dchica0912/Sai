@@ -7,7 +7,7 @@
     android:background="@color/background"
     android:orientation="vertical"
     android:padding="50dp"
-    tools:context=".Login">
+    tools:context=".Modules.User.Authentication.Login">
 
     <LinearLayout
         android:layout_width="match_parent"

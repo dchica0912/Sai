@@ -7,7 +7,7 @@
     android:background="@color/background"
     android:clipToPadding="false"
     android:paddingTop="20dp"
-    tools:context=".RegistrationFirst">
+    tools:context=".Modules.User.Registration.RegistrationFirst">
 
     <RelativeLayout
 

@@ -9,7 +9,7 @@
     android:paddingTop="40dp"
     android:orientation="vertical"
     android:background="@android:color/holo_green_light"
-    tools:context=".DiaryFragment">
+    tools:context=".Modules.Diary.DiaryFragment">
 
 
 </LinearLayout>

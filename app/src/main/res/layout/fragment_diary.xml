@@ -7,7 +7,7 @@
     android:background="#f4f2fb"
     android:gravity="center"
     android:paddingTop="15dp"
-    tools:context=".DiaryFragment">
+    tools:context=".Modules.Diary.DiaryFragment">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

@@ -1,4 +1,4 @@
-package june.delachica.com.sai;
+package june.delachica.com.sai.Modules.Mood;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -8,6 +8,8 @@ import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import june.delachica.com.sai.R;
 
 public class MoodFragment extends Fragment {
     @Nullable

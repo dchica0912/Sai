@@ -1,4 +1,4 @@
-package june.delachica.com.sai;
+package june.delachica.com.sai.Modules.Diary;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -11,16 +11,29 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageView;
+import android.widget.TextView;
 
-import java.util.List;
+import june.delachica.com.sai.Modules.Chat.ChatbotFragment;
+import june.delachica.com.sai.Modules.Mood.MoodFragment;
+import june.delachica.com.sai.R;
 
-public class SavedJournal extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class WriteDiary extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private DrawerLayout drawer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_saved_journal);
+        setContentView(R.layout.activity_write_diary);
+
+        TextView saveDiary = findViewById(R.id.saveDiary);
+        saveDiary.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(WriteDiary.this, SavedDiary.class);
+                startActivity(i);
+            }
+        });
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -34,14 +47,7 @@ public class SavedJournal extends AppCompatActivity implements NavigationView.On
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        ImageView listIcon = findViewById(R.id.listIcon);
-        listIcon.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(SavedJournal.this, ListThoughts.class);
-                startActivity(i);
-            }
-        });
+
     }
 
     @Override
@@ -67,6 +73,7 @@ public class SavedJournal extends AppCompatActivity implements NavigationView.On
             drawer.closeDrawer(GravityCompat.START);
         } else {
             super.onBackPressed();
+
         }
     }
 }

@@ -1,13 +1,16 @@
-package june.delachica.com.sai;
+package june.delachica.com.sai.Modules.User.Authentication;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
+
+import june.delachica.com.sai.Main.MainActivity;
+import june.delachica.com.sai.Modules.User.Reset.ForgotPassword;
+import june.delachica.com.sai.Modules.User.Registration.RegistrationFirst;
+import june.delachica.com.sai.R;
 
 public class Login extends AppCompatActivity {
 

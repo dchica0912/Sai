@@ -1,4 +1,4 @@
-package june.delachica.com.sai;
+package june.delachica.com.sai.Modules.User.Registration;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -9,6 +9,9 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Spinner;
+
+import june.delachica.com.sai.Modules.User.Authentication.Login;
+import june.delachica.com.sai.R;
 
 public class RegistrationFirst extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
 

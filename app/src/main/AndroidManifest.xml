@@ -63,6 +63,9 @@
             android:name=".RegistrationThird"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MoodFragment"
+            />
     </application>
 
 </manifest>

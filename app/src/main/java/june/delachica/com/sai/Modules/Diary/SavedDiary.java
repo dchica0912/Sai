@@ -14,7 +14,6 @@ import android.view.View;
 import android.widget.ImageView;
 
 import june.delachica.com.sai.Modules.Chat.ChatbotFragment;
-import june.delachica.com.sai.Modules.Mood.ListThoughts;
 import june.delachica.com.sai.Modules.Mood.MoodFragment;
 import june.delachica.com.sai.R;
 

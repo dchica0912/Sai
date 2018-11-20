@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/background"
     android:fitsSystemWindows="true"
-    tools:context=".Modules.Mood.ListThoughts">
+    tools:context=".Modules.Diary.ListThoughts">
     <!--tools:openDrawer="start"-->
     <LinearLayout
         android:layout_width="match_parent"

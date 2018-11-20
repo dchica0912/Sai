@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,8 +8,25 @@
     android:layout_gravity="center"
     android:paddingTop="40dp"
     android:orientation="vertical"
-    android:background="@android:color/holo_green_light"
-    tools:context=".Modules.Diary.DiaryFragment">
+    tools:context=".Modules.Mood.MoodFragment">
 
 
-</LinearLayout>
+<!--<io.ghyeok.stickyswitch.widget.StickySwitch-->
+    <!--android:id="@+id/stick_switch"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--app:ss_iconPadding="18dp"-->
+    <!--app:ss_iconSize="22dp"-->
+    <!--app:ss_leftIcon="@drawable/icon_add"-->
+    <!--app:ss_leftText="Add"-->
+    <!--app:ss_rightIcon="@drawable/icon_clear"-->
+    <!--app:ss_rightText="Clear"-->
+    <!--app:ss_selectedTextSize="14sp"-->
+    <!--app:ss_sliderBackgroundColor="@color/background"-->
+    <!--app:ss_switchColor="@color/violet"-->
+    <!--app:ss_textColor="@color/darkGrey"-->
+    <!--app:ss_textSize="12sp"-->
+    <!--/>-->
+
+</RelativeLayout>

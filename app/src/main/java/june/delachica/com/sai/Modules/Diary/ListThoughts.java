@@ -1,4 +1,4 @@
-package june.delachica.com.sai.Modules.Mood;
+package june.delachica.com.sai.Modules.Diary;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

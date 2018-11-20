@@ -44,7 +44,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Modules.Mood.ListThoughts"
+            android:name=".Modules.Diary.ListThoughts"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
@@ -59,9 +59,8 @@
             android:name=".Modules.User.Registration.RegistrationThird"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Modules.Mood.MoodFragment"
-            />
+        <activity android:name=".Modules.Mood.MoodFragment" />
+        <activity android:name=".Modules.User.Reset.ForgotPassReset"></activity>
     </application>
 
 </manifest>

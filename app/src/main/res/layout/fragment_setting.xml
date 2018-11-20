@@ -1,200 +1,329 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="30dp"
     tools:context=".Modules.Settings.SettingsFragment">
+
     <TextView
+        android:id="@+id/settingsTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:paddingStart="30dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="30dp"
+        android:paddingBottom="10dp"
+        android:scaleType="fitXY"
         android:text="Settings"
         android:textColor="@color/darkGrey"
         android:textSize="25sp"
-        android:textStyle="bold"
-        android:scaleType="fitXY"
-        android:fontFamily="@font/montserrat"
-        android:id="@+id/settingsTitle"/>
+        android:textStyle="bold" />
+
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settingsTitle"
+        android:fadeScrollbars="true"
+        android:scrollbarDefaultDelayBeforeFade="3">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
             android:orientation="vertical">
 
-            <RelativeLayout
-                android:padding="30dp"
+            <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
-                android:elevation="4dp"
-                android:layout_height="wrap_content">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:id="@+id/nameLayout"
-                    android:focusable="true"
-                    android:focusableInTouchMode="true"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="Clar"
-                        android:maxLines="1"
-                        android:fontFamily="@font/montserrat"
-                        android:textSize="25sp"
-                        android:textColor="@color/darkGrey"
-                        android:textColorHint="@color/darkGrey"
-                        android:id="@+id/nick"
-                        />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/montserrat"
-                        android:text="Nickname"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/nameLayout"
-                    android:id="@+id/emailLayout"
-                    android:orientation="vertical">
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="sampleemail@gmail.com"
-                        android:fontFamily="@font/montserrat"
-                        android:textSize="18sp"
-                        android:maxLines="1"
-                        android:inputType="textEmailAddress"
-                        android:textColor="@color/darkGrey"
-                        android:textColorHint="@color/darkGrey"
-                        />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/montserrat"
-                        android:text="Email"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/emailLayout"
-                    android:id="@+id/dateLayout"
-                    android:orientation="vertical">
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="08/28/1999"
-                        android:fontFamily="@font/montserrat"
-                        android:textSize="18sp"
-                        android:maxLines="1"
-                        android:inputType="date"
-                        android:textColor="@color/darkGrey"
-                        android:textColorHint="@color/darkGrey"
-                        android:id="@+id/nickname"
-                        />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/montserrat"
-                        android:text="Birthdate"/>
-                </LinearLayout>
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="3dp"
+                app:contentPadding="30dp">
 
-            </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="4dp">
+
+                    <LinearLayout
+                        android:id="@+id/nameLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/nick"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:hint="Clar"
+                            android:background="@drawable/bg_edit_text_transparent"
+                            android:maxLines="1"
+                            android:textColor="@color/darkGrey"
+                            android:textColorHint="@color/darkGrey"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:text="Nickname" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/emailLayout"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/nameLayout"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:hint="sampleemail@gmail.com"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:background="@drawable/bg_edit_text_transparent"
+                            android:textColor="@color/darkGrey"
+                            android:textColorHint="@color/darkGrey"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:text="Email" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/dateLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/emailLayout"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/nickname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:hint="08/28/1999"
+                            android:background="@drawable/bg_edit_text_transparent"
+                            android:inputType="date"
+                            android:maxLines="1"
+                            android:textColor="@color/darkGrey"
+                            android:textColorHint="@color/darkGrey"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:text="Birthdate" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="3dp"
+                app:contentPadding="30dp">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/firstRow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/disabled"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Disabled"
+                            android:textColor="@color/darkGrey"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/subDisabled"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/disabled"
+                            android:layout_weight="1"
+                            android:text="SAI Protection"
+                            android:textColor="#aeaeae"
+                            android:textSize="12sp" />
+
+                        <Switch
+                            android:id="@+id/switch1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginEnd="60dp"
+                            android:layout_toEndOf="@id/disabled"
+                            android:layout_weight="1" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/firstRow">
+
+                        <TextView
+                            android:id="@+id/enabled"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Enabled"
+                            android:textColor="@color/darkGrey"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/subEnabled"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/enabled"
+                            android:layout_weight="1"
+                            android:text="Thought Diary Monitoring"
+                            android:textColor="#aeaeae"
+                            android:textSize="12sp" />
+
+                        <Switch
+                            android:id="@+id/switch2"
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginEnd="60dp"
+                            android:layout_toEndOf="@id/enabled"
+                            android:layout_weight="1" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="3dp"
+                app:contentPadding="30dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/sendNotif"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Send notifications on" />
+
+                    <TextView
+                        android:id="@+id/timeOne"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sendNotif"
+                        android:fontFamily="@font/montserrat"
+                        android:text="8:00 AM"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/timeTwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/timeOne"
+                        android:fontFamily="@font/montserrat"
+                        android:text="10:00 PM"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="30dp">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Send notifications on"
-                    android:fontFamily="@font/montserrat"
-                    android:id="@+id/sendNotif"
-                    />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_below="@id/sendNotif"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/timeOne"
-                    android:textColor="@color/darkGrey"
-                    android:textSize="20sp"
-                    android:text="8:00 AM"
-                    android:fontFamily="@font/montserrat"
-                    />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/timeTwo"
-                    android:textColor="@color/darkGrey"
-                    android:textSize="20sp"
-                    android:layout_below="@+id/timeOne"
-                    android:text="10:00 PM"
-                    android:fontFamily="@font/montserrat"
-                    />
-            </RelativeLayout>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/first"
-                android:textColor="#aeaeae"
-                android:textSize="15sp"
-                android:textAlignment="center"
-                android:layout_below="@+id/timeOne"
-                android:text="ERASE ALL CONTENT AND SETTINGS"
-                android:fontFamily="@font/montserrat"
-                />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/two"
-                android:textColor="#aeaeae"
-                android:layout_marginTop="10sp"
-                android:textSize="15sp"
-                android:textAlignment="center"
-                android:layout_below="@+id/timeOne"
-                android:text="DOWNLOAD ALL DATA STORED BY SAI"
-                android:fontFamily="@font/montserrat"
-                />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/three"
-                android:layout_marginTop="10sp"
-                android:textColor="#aeaeae"
-                android:textSize="15sp"
-                android:textAlignment="center"
-                android:layout_below="@+id/timeOne"
-                android:text="PRIVACY STATEMENT/POLICY"
-                android:fontFamily="@font/montserrat"
-                />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/four"
-                android:textColor="#aeaeae"
-                android:textSize="15sp"
-                android:layout_marginTop="10sp"
-                android:textAlignment="center"
-                android:layout_below="@+id/timeOne"
-                android:text="HELP"
-                android:fontFamily="@font/montserrat"
-                />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/five"
-                android:textColor="#aeaeae"
-                android:textSize="15sp"
-                android:textAlignment="center"
-                android:layout_marginTop="10sp"
-                android:layout_below="@+id/timeOne"
-                android:text="ABOUT"
-                android:fontFamily="@font/montserrat"
-                />
 
+                <TextView
+                    android:id="@+id/one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="ERASE ALL CONTENT AND SETTINGS"
+                    android:textAlignment="center"
+                    android:textColor="#aeaeae"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/one"
+                    android:layout_marginTop="10sp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="DOWNLOAD ALL DATA STORED BY SAI"
+                    android:textAlignment="center"
+                    android:textColor="#aeaeae"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/three"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/two"
+                    android:layout_marginTop="10sp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="PRIVACY STATEMENT/POLICY"
+                    android:textAlignment="center"
+                    android:textColor="#aeaeae"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/four"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/three"
+                    android:layout_marginTop="10sp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="HELP"
+                    android:textAlignment="center"
+                    android:textColor="#aeaeae"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/five"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/four"
+                    android:layout_marginTop="10sp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="ABOUT"
+                    android:textAlignment="center"
+                    android:textColor="#aeaeae"
+                    android:textSize="15sp" />
+            </RelativeLayout>
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

@@ -15,6 +15,13 @@ public class ForgotPassSuccess extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forgot_pass_success);
-
+        Button sendCheck = findViewById(R.id.sendCheck);
+        sendCheck.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(ForgotPassSuccess.this, ForgotPassReset.class);
+                startActivity(i);
+            }
+        });
     }
 }

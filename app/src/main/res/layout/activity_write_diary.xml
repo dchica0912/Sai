@@ -45,6 +45,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@null"
+                        android:fontFamily="@font/avenir_bold"
                         android:hint="@string/writeDiaryTitle"
                         android:textColor="@color/whiteText"
                         android:maxLines="1"
@@ -64,6 +65,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@null"
+                        android:fontFamily="@font/avenir_regular"
                         android:hint="@string/writeDiaryBody"
                         android:paddingStart="15dp"
                         android:paddingEnd="15dp"
@@ -88,6 +90,7 @@
                     android:foreground="?android:attr/selectableItemBackground"
                     android:gravity="center"
                     android:padding="15dp"
+                    android:fontFamily="@font/avenir_regular"
                     android:text="@string/writeDiarySave"
                     android:textSize="18sp" />
 

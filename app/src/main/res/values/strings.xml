@@ -14,9 +14,12 @@
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when specimen book. It has
     </string>
     <string name="myThoughts">My Thoughts</string>
-
-
+    <string name="start">Get started</string>
+    <string name="percentage">0%</string>
+    <string name="talk_with_sai">Talk with SAI</string>
+    <string name="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</string>
     <string-array name="months">
+
         <item>January</item>
         <item>February</item>
         <item>March</item>

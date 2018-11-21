@@ -3,6 +3,7 @@ package june.delachica.com.sai.Modules.User.Reset;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.Button;
 
@@ -15,7 +16,7 @@ public class ForgotPassword extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forgot_password);
 
-        Button sendForgot = findViewById(R.id.sendForgot);
+        CardView sendForgot = findViewById(R.id.sendForgot);
         sendForgot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

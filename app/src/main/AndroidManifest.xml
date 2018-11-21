@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Modules.User.Authentication.Login"
+            android:name=".Modules.Welcome.WelcomeScreen"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -59,8 +59,12 @@
             android:name=".Modules.User.Registration.RegistrationThird"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Modules.Mood.MoodFragment" />
-        <activity android:name=".Modules.User.Reset.ForgotPassReset"></activity>
+        <activity android:name=".Modules.User.Reset.ForgotPassReset"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Modules.User.Authentication.Login"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

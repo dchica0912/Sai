@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="true">
+
+    <ImageView
+        android:id="@+id/slide_image"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:srcCompat="@drawable/ws1" />
+
+    <TextView
+        android:id="@+id/slide_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slide_image"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/avenir_bold"
+        android:text="@string/talk_with_sai"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/slide_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/avenir_regular"
+        android:text="@string/description"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+</RelativeLayout>

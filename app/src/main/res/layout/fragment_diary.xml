@@ -54,6 +54,7 @@
                 android:layout_height="215dp"
                 android:drawableTop="@drawable/icon_add_note_tab"
                 android:gravity="center"
+                android:fontFamily="@font/avenir_regular"
                 android:text="SHARE YOUR THOUGHTS"
                 android:textColor="#fff"
                 android:textSize="15sp" />

@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:clipToPadding="false"
     android:background="@color/background"
+    android:clipToPadding="false"
     android:paddingTop="20dp"
     tools:context=".Modules.User.Registration.RegistrationFirst">
 
@@ -19,7 +19,7 @@
             android:id="@+id/registrationTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/montserrat"
+            android:fontFamily="@font/avenir_bold"
             android:text="Registration"
             android:textAlignment="center"
             android:textColor="@color/darkGrey"
@@ -32,61 +32,77 @@
             android:layout_below="@id/registrationTitle"
             android:layout_marginTop="20dp">
 
-            <LinearLayout
+            <RelativeLayout
                 android:id="@+id/tracker"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="30dp"
+                android:gravity="center"
                 android:orientation="horizontal">
-
                 <TextView
-                    android:layout_width="250dp"
-                    android:layout_marginEnd="30dp"
-                    android:layout_marginStart="30dp"
+                    android:id="@+id/stepOne"
+                    android:layout_width="wrap_content"
                     android:layout_height="55dp"
-                    android:layout_marginTop="10dp"
-                    android:textSize="30sp"
-                    android:background="@drawable/ovalpurple_outline"
-                    android:fontFamily="@font/montserrat"
-                    android:gravity="center"
-                    android:layout_weight="1"
-                    android:text="1" />
-                <TextView
-                    android:layout_width="250dp"
-                    android:layout_height="55dp"
-                    android:layout_marginTop="10dp"
-                    android:textSize="30sp"
-                    android:layout_marginEnd="30dp"
-                    android:layout_marginStart="30dp"
                     android:background="@drawable/ovalpurple"
+                    android:fontFamily="@font/avenir_regular"
+                    android:gravity="center"
+                    android:text="1"
                     android:textColor="@color/whiteText"
-                    android:fontFamily="@font/montserrat"
-                    android:gravity="center"
-                    android:layout_weight="1"
-                    android:text="2" />
-                <TextView
-                    android:layout_width="250dp"
-                    android:layout_height="55dp"
-                    android:layout_marginEnd="30dp"
-                    android:layout_marginStart="30dp"
-                    android:layout_marginTop="10dp"
-                    android:textSize="30sp"
-                    android:background="@drawable/ovalpurple_outline"
-                    android:fontFamily="@font/montserrat"
-                    android:gravity="center"
-                    android:layout_weight="1"
-                    android:text="3" />
+                    android:textSize="30sp" />
 
-            </LinearLayout>
+                <View
+                    android:id="@+id/firstHor"
+                    android:layout_width="70dp"
+                    android:layout_height="5dp"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@id/stepOne"
+                    android:background="@color/violet" />
+
+                <TextView
+                    android:id="@+id/stepTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_toEndOf="@id/firstHor"
+                    android:layout_weight="1"
+                    android:background="@drawable/ovalpurple"
+                    android:fontFamily="@font/avenir_regular"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@color/whiteText"
+                    android:textSize="30sp" />
+
+                <View
+                    android:id="@+id/secondHor"
+                    android:layout_width="70dp"
+                    android:layout_height="5dp"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@id/stepTwo"
+                    android:background="@color/violet" />
+
+
+                <TextView
+                    android:id="@+id/stepThree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_toEndOf="@id/secondHor"
+                    android:background="@drawable/ovalpurple_outline"
+                    android:fontFamily="@font/avenir_regular"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="30sp" />
+
+
+            </RelativeLayout>
 
 
             <LinearLayout
+                android:id="@+id/emailLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tracker"
-                android:id="@+id/emailLayout"
                 android:layout_marginStart="60dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="60dp"
@@ -94,7 +110,6 @@
 
                 <EditText
                     android:id="@+id/registerEmail"
-                    android:inputType="textEmailAddress"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
@@ -102,8 +117,9 @@
                     android:clickable="true"
                     android:elevation="4dp"
                     android:focusable="true"
-                    android:fontFamily="@font/montserrat"
+                    android:fontFamily="@font/avenir_regular"
                     android:hint="Email Address"
+                    android:inputType="textEmailAddress"
                     android:maxLines="1"
                     android:paddingLeft="18dp"
                     android:paddingTop="10dp"
@@ -117,10 +133,10 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/passwordLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/emailLayout"
-                android:id="@+id/passwordLayout"
                 android:layout_marginStart="60dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="60dp"
@@ -131,14 +147,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
-                    android:inputType="textPassword"
-                    android:drawableRight="@drawable/icon_reveal_password"
                     android:background="@drawable/bg_edit_text"
                     android:clickable="true"
+                    android:drawableRight="@drawable/icon_reveal_password"
                     android:elevation="4dp"
                     android:focusable="true"
-                    android:fontFamily="@font/montserrat"
+                    android:fontFamily="@font/avenir_regular"
                     android:hint="Password"
+                    android:inputType="textPassword"
                     android:maxLines="1"
                     android:paddingLeft="18dp"
                     android:paddingTop="10dp"
@@ -166,12 +182,12 @@
                     android:layout_margin="10dp"
                     android:background="@drawable/bg_edit_text"
                     android:clickable="true"
-                    android:inputType="textPassword"
                     android:drawableRight="@drawable/icon_reveal_password"
                     android:elevation="4dp"
                     android:focusable="true"
-                    android:fontFamily="@font/montserrat"
+                    android:fontFamily="@font/avenir_regular"
                     android:hint="Confirm Password"
+                    android:inputType="textPassword"
                     android:maxLines="1"
                     android:paddingLeft="18dp"
                     android:paddingTop="10dp"
@@ -186,9 +202,8 @@
         </RelativeLayout>
 
 
-
-
     </RelativeLayout>
+
     <ImageView
         android:id="@+id/previous"
         android:layout_width="wrap_content"

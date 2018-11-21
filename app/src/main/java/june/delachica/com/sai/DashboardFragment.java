@@ -1,4 +1,4 @@
-package june.delachica.com.sai.Modules;
+package june.delachica.com.sai;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;

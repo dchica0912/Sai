@@ -38,7 +38,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="25dp"
         android:orientation="horizontal">
 
         <EditText
@@ -54,13 +54,14 @@
             android:drawableLeft="@drawable/icon_person_outline"
             android:drawablePadding="15dp"
             android:elevation="1dp"
-            android:fontFamily="@font/montserrat"
+            android:fontFamily="@font/avenir_regular"
             android:hint="Email"
             android:maxLines="1"
             android:padding="8dp"
             android:paddingBottom="20dp"
             android:textColor="@color/darkGrey"
-            android:textColorHint="@color/textHint"
+            android:textColorHint="#adaeaeae"
+            android:focusable="true"
             android:textSize="18sp" />
     </LinearLayout>
 
@@ -85,7 +86,7 @@
             android:drawablePadding="15dp"
             android:elevation="1dp"
             android:focusable="true"
-            android:fontFamily="@font/montserrat"
+            android:fontFamily="@font/avenir_regular"
             android:hint="Password"
             android:inputType="textPassword"
             android:maxLines="1"
@@ -100,22 +101,30 @@
         android:id="@+id/loginButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
         android:orientation="vertical">
-
-        <Button
+        <android.support.v7.widget.CardView
             android:id="@+id/login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/purple_background_button"
-            android:clickable="true"
-            android:elevation="20dp"
+            app:cardBackgroundColor="@color/violet"
+            app:cardCornerRadius="25dp"
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
-            android:padding="15dp"
-            android:text="Login"
-            android:textColor="#fff"
-            android:textSize="15sp" />
+            app:cardElevation="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:contentPadding="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/avenir_regular"
+                android:text="LOGIN"
+                android:textAlignment="center"
+                android:textColor="@color/whiteText"
+                android:textSize="15sp" />
+        </android.support.v7.widget.CardView>
+
     </RelativeLayout>
 
     <RelativeLayout
@@ -129,6 +138,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
+            android:fontFamily="@font/avenir_regular"
             android:text="Forgot Password?"
             android:textSize="15sp" />
 
@@ -137,7 +147,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:text="Haven't talked to Sai yet??"
+            android:fontFamily="@font/avenir_regular"
+            android:text="Haven't talked to SAI yet?"
             android:textSize="15sp" />
 
 

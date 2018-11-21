@@ -10,7 +10,7 @@
         android:id="@+id/settingsTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat"
+        android:fontFamily="@font/avenir_bold"
         android:paddingStart="30dp"
         android:paddingTop="10dp"
         android:paddingEnd="30dp"
@@ -60,7 +60,7 @@
                             android:id="@+id/nick"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/montserrat"
+                            android:fontFamily="@font/avenir_regular"
                             android:hint="Clar"
                             android:background="@drawable/bg_edit_text_transparent"
                             android:maxLines="1"
@@ -71,7 +71,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/montserrat"
+                            android:fontFamily="@font/avenir_regular"
                             android:text="Nickname" />
                     </LinearLayout>
 
@@ -86,7 +86,7 @@
                         <EditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/montserrat"
+                            android:fontFamily="@font/avenir_regular"
                             android:hint="sampleemail@gmail.com"
                             android:inputType="textEmailAddress"
                             android:maxLines="1"
@@ -98,7 +98,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/montserrat"
+                            android:fontFamily="@font/avenir_regular"
                             android:text="Email" />
                     </LinearLayout>
 
@@ -114,7 +114,7 @@
                             android:id="@+id/nickname"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/montserrat"
+                            android:fontFamily="@font/avenir_regular"
                             android:hint="08/28/1999"
                             android:background="@drawable/bg_edit_text_transparent"
                             android:inputType="date"
@@ -126,7 +126,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/montserrat"
+                            android:fontFamily="@font/avenir_regular"
                             android:text="Birthdate" />
                     </LinearLayout>
 
@@ -156,6 +156,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:fontFamily="@font/avenir_regular"
                             android:text="Disabled"
                             android:textColor="@color/darkGrey"
                             android:textSize="20sp" />
@@ -166,6 +167,7 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@id/disabled"
                             android:layout_weight="1"
+                            android:fontFamily="@font/avenir_regular"
                             android:text="SAI Protection"
                             android:textColor="#aeaeae"
                             android:textSize="12sp" />
@@ -191,6 +193,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:fontFamily="@font/avenir_regular"
                             android:text="Enabled"
                             android:textColor="@color/darkGrey"
                             android:textSize="20sp" />
@@ -201,6 +204,7 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@id/enabled"
                             android:layout_weight="1"
+                            android:fontFamily="@font/avenir_regular"
                             android:text="Thought Diary Monitoring"
                             android:textColor="#aeaeae"
                             android:textSize="12sp" />
@@ -236,7 +240,7 @@
                         android:id="@+id/sendNotif"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/montserrat"
+                        android:fontFamily="@font/avenir_regular"
                         android:text="Send notifications on" />
 
                     <TextView
@@ -244,7 +248,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/sendNotif"
-                        android:fontFamily="@font/montserrat"
+                        android:fontFamily="@font/avenir_regular"
                         android:text="8:00 AM"
                         android:textColor="@color/darkGrey"
                         android:textSize="20sp" />
@@ -254,7 +258,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/timeOne"
-                        android:fontFamily="@font/montserrat"
+                        android:fontFamily="@font/avenir_regular"
                         android:text="10:00 PM"
                         android:textColor="@color/darkGrey"
                         android:textSize="20sp" />
@@ -270,7 +274,7 @@
                     android:id="@+id/one"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat"
+                    android:fontFamily="@font/avenir_regular"
                     android:text="ERASE ALL CONTENT AND SETTINGS"
                     android:textAlignment="center"
                     android:textColor="#aeaeae"
@@ -282,7 +286,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/one"
                     android:layout_marginTop="10sp"
-                    android:fontFamily="@font/montserrat"
+                    android:fontFamily="@font/avenir_regular"
                     android:text="DOWNLOAD ALL DATA STORED BY SAI"
                     android:textAlignment="center"
                     android:textColor="#aeaeae"
@@ -294,7 +298,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/two"
                     android:layout_marginTop="10sp"
-                    android:fontFamily="@font/montserrat"
+                    android:fontFamily="@font/avenir_regular"
                     android:text="PRIVACY STATEMENT/POLICY"
                     android:textAlignment="center"
                     android:textColor="#aeaeae"
@@ -306,7 +310,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/three"
                     android:layout_marginTop="10sp"
-                    android:fontFamily="@font/montserrat"
+                    android:fontFamily="@font/avenir_regular"
                     android:text="HELP"
                     android:textAlignment="center"
                     android:textColor="#aeaeae"
@@ -318,7 +322,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/four"
                     android:layout_marginTop="10sp"
-                    android:fontFamily="@font/montserrat"
+                    android:fontFamily="@font/avenir_regular"
                     android:text="ABOUT"
                     android:textAlignment="center"
                     android:textColor="#aeaeae"

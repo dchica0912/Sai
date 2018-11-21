@@ -1,32 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center"
-    android:paddingTop="40dp"
-    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
     tools:context=".Modules.Mood.MoodFragment">
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/avenir_bold"
+        android:text="How are you feeling today?"
+        android:textSize="22sp" />
 
-<!--<io.ghyeok.stickyswitch.widget.StickySwitch-->
-    <!--android:id="@+id/stick_switch"-->
-    <!--android:layout_centerInParent="true"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--app:ss_iconPadding="18dp"-->
-    <!--app:ss_iconSize="22dp"-->
-    <!--app:ss_leftIcon="@drawable/icon_add"-->
-    <!--app:ss_leftText="Add"-->
-    <!--app:ss_rightIcon="@drawable/icon_clear"-->
-    <!--app:ss_rightText="Clear"-->
-    <!--app:ss_selectedTextSize="14sp"-->
-    <!--app:ss_sliderBackgroundColor="@color/background"-->
-    <!--app:ss_switchColor="@color/violet"-->
-    <!--app:ss_textColor="@color/darkGrey"-->
-    <!--app:ss_textSize="12sp"-->
-    <!--/>-->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/seekBar"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="240dp"
+        android:visibility="invisible" />
 
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageSeek"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:progress="50"
+        android:background="@drawable/seekbar_line_background"
+        android:progressBackgroundTint="@color/lightViolet"
+        android:progressTint="@color/violet"
+        android:thumb="@drawable/thumb" />
+
+    <ImageView
+        android:id="@+id/imageSeek"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/td1" />
+
+    <ImageView
+        android:id="@+id/imageSeek2"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/td2" />
+
+    <ImageView
+        android:id="@+id/imageSeek3"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/td3" />
+
+    <ImageView
+        android:id="@+id/imageSeek4"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/td4" />
+
+    <ImageView
+        android:id="@+id/imageSeek5"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/td5" />
 </RelativeLayout>

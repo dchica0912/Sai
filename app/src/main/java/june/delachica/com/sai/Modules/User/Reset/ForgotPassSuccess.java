@@ -3,6 +3,7 @@ package june.delachica.com.sai.Modules.User.Reset;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -15,7 +16,7 @@ public class ForgotPassSuccess extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forgot_pass_success);
-        Button sendCheck = findViewById(R.id.sendCheck);
+        CardView sendCheck = findViewById(R.id.sendCheck);
         sendCheck.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

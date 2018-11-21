@@ -13,8 +13,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 
+import june.delachica.com.sai.DashboardFragment;
 import june.delachica.com.sai.Modules.Chat.ChatbotFragment;
 import june.delachica.com.sai.Modules.Mood.MoodFragment;
+import june.delachica.com.sai.Modules.Settings.SettingsFragment;
 import june.delachica.com.sai.R;
 
 public class SavedDiary extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -49,6 +51,9 @@ public class SavedDiary extends AppCompatActivity implements NavigationView.OnNa
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         switch (menuItem.getItemId()) {
+            case R.id.navDashboard:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new DashboardFragment()).commit();
+                break;
             case R.id.navJournal:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new DiaryFragment()).commit();
                 break;
@@ -57,6 +62,9 @@ public class SavedDiary extends AppCompatActivity implements NavigationView.OnNa
                 break;
             case R.id.navTrackMood:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new MoodFragment()).commit();
+                break;
+            case R.id.navSettings:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsFragment()).commit();
                 break;
         }
         drawer.closeDrawer(GravityCompat.START);

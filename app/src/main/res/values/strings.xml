@@ -11,10 +11,10 @@
     <string name="navigation_drawer_close">Close Navigation Drawer</string>
     <string name="check_email">Check your email</string>
     <string name="check_email_sub">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when specimen book. It has
+        An email has been sent to your account. Click the link to reset your password.
     </string>
     <string name="myThoughts">My Thoughts</string>
-    <string name="start">Get started</string>
+    <string name="start">GET STARTED</string>
     <string name="percentage">0%</string>
     <string name="talk_with_sai">Talk with SAI</string>
     <string name="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</string>

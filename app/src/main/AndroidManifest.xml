@@ -28,10 +28,6 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Modules.Diary.SavedDiary"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".Main.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -59,12 +55,17 @@
             android:name=".Modules.User.Registration.RegistrationThird"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Modules.User.Reset.ForgotPassReset"
+        <activity
+            android:name=".Modules.User.Reset.ForgotPassReset"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Modules.User.Authentication.Login"
+        <activity
+            android:name=".Modules.User.Authentication.Login"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Modules.Settings.LockActivity"></activity>
+        <!-- .Modules.Welcome.WelcomeScreen -->
+        <activity android:name=".Modules.Progress.ProgressFragment"></activity>
     </application>
 
 </manifest>

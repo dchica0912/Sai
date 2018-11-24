@@ -12,10 +12,17 @@
         android:elevation="4dp"
         android:fontFamily="@font/montserrat"
         android:padding="12dp"
-        android:text="Hi Hello World"
+        android:text=". . . . . . . . . "
         android:background="@drawable/bot_bubble"
         android:layout_alignParentStart="true"
         android:textColor="@color/white"
         android:textSize="20sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SAI is typing . . . ."
+        android:textColor="#aeaeae"
+        android:layout_marginLeft="8dp"
+        android:layout_below="@id/textMessage"/>
 
 </RelativeLayout>

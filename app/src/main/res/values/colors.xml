@@ -15,6 +15,7 @@
     <color name="violet">#8277cb</color>
     <color name="darkViolet">#514a83</color>
     <color name="darkGrey">#414953</color>
+    <color name="darkGreyOpacity">#7f414953</color>
     <color name="whiteText">#fff</color>
     <color name="textHint">#5c554d</color>
     <color name="colorTransparentWhite">#ccc</color>

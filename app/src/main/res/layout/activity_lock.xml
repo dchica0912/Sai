@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:padding="50dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="@color/darkGrey"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:id="@+id/title"
+        android:fontFamily="@font/avenir_bold"
+        android:textSize="18sp"
+        android:text="Enter pin"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="@color/darkGreyOpacity"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:id="@+id/sub"
+        android:layout_below="@+id/title"
+        android:textSize="12sp"
+        android:fontFamily="@font/avenir_bold"
+        android:text="to secure SAI"/>
+
+
+    <com.andrognito.pinlockview.IndicatorDots
+        android:id="@+id/indicator_dots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sub"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <com.andrognito.pinlockview.PinLockView
+        android:id="@+id/pin_lock_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/indicator_dots"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:keypadButtonSize="72dp"
+        app:keypadShowDeleteButton="true"
+        app:keypadTextColor="@color/violet"
+        app:keypadTextSize="18dp" />
+
+</RelativeLayout>

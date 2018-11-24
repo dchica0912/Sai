@@ -1,5 +1,6 @@
 package june.delachica.com.sai.Modules.Diary;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -9,6 +10,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 
 import june.delachica.com.sai.DashboardFragment;
 import june.delachica.com.sai.Modules.Chat.ChatbotFragment;
@@ -29,6 +32,14 @@ public class ListThoughts extends AppCompatActivity implements NavigationView.On
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+        ImageView imageView = findViewById(R.id.arrayView);
+        imageView.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent i=  new Intent(ListThoughts.this,DiaryFragment.class); //mali 'to
+                startActivity(i);
+            }
+        });
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar,
                 R.string.navigation_drawer_open, R.string.navigation_drawer_close);

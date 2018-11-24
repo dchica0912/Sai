@@ -1,0 +1,67 @@
+<en_responses>
+    <mood type="sad_lonely_unhappy">
+        <response>Why are you sad?</response>
+        <!--Add responses here-->
+    </mood>
+
+    <mood type="disturbed_no_focus">
+        <response>I seem to sense that you're losing focus</response>
+        <!--Add responses here-->
+    </mood>
+
+    <mood type="feeling_of_isolation">
+        <response>Isolation response</response>
+    </mood>
+
+    <mood type="sleep_problems">
+        <response>Sleep problems response</response>
+    </mood>
+
+    <mood type="hopeless">
+        <response>Hopeless response</response>
+    </mood>
+
+    <mood type="fatigue_stressed">
+        <response>Fatigue Stressed response</response>
+    </mood>
+
+    <mood type="pessimism">
+        <response>Pessimism response</response>
+    </mood>
+
+    <mood type="uneasy_unstable">
+        <response>Uneasy unstable response</response>
+    </mood>
+
+    <mood type="moody">
+        <response>Moody response</response>
+    </mood>
+
+    <mood type="emotional">
+        <response>Emotional response</response>
+    </mood>
+
+    <mood type="eating_problems">
+        <response>Eating problems response</response>
+    </mood>
+
+    <mood type="low_self_esteem">
+        <response>Low self esteem response</response>
+    </mood>
+
+    <mood type="suicidal">
+        <response>Suicidal response</response>
+    </mood>
+
+    <mood type="anxious">
+        <response>Anxious response</response>
+    </mood>
+
+    <mood type="pretending_to_be_happy">
+        <response>Pretending to be happy response</response>
+    </mood>
+
+    <mood type="have_no_emotional_support">
+        <response>Have no emotional response response</response>
+    </mood>
+</en_responses>

@@ -4,41 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_centerInParent="true"
     android:background="@color/background"
     android:orientation="vertical"
+    android:layout_centerVertical="true"
     android:padding="50dp"
     tools:context=".Modules.User.Authentication.Login">
 
-    <LinearLayout
+
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/app_name"
-            android:textColor="#000"
-            android:textSize="40sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="55dp"
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/icon_android" />
-    </LinearLayout>
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/logo2" />
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="45dp"
         android:orientation="horizontal">
 
         <EditText
@@ -54,6 +45,7 @@
             android:drawableLeft="@drawable/icon_person_outline"
             android:drawablePadding="15dp"
             android:elevation="1dp"
+            android:focusable="true"
             android:fontFamily="@font/avenir_regular"
             android:hint="Email"
             android:maxLines="1"
@@ -61,7 +53,6 @@
             android:paddingBottom="20dp"
             android:textColor="@color/darkGrey"
             android:textColorHint="#adaeaeae"
-            android:focusable="true"
             android:textSize="18sp" />
     </LinearLayout>
 
@@ -69,7 +60,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="5dp"
         android:orientation="horizontal">
 
         <EditText
@@ -139,6 +130,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:fontFamily="@font/avenir_regular"
+            android:padding="3dp"
             android:text="Forgot Password?"
             android:textSize="15sp" />
 
@@ -148,6 +140,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:fontFamily="@font/avenir_regular"
+            android:padding="3dp"
             android:text="Haven't talked to SAI yet?"
             android:textSize="15sp" />
 

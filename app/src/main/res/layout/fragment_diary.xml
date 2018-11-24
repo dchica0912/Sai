@@ -8,117 +8,276 @@
     android:gravity="center"
     android:paddingTop="15dp"
     tools:context=".Modules.Diary.DiaryFragment">
-    <LinearLayout
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content">
 
-        android:layout_gravity="center"
-        android:orientation="vertical"
-        android:paddingTop="40dp">
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:id="@+id/listIcon"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_marginRight="30dp"
-                android:layout_marginBottom="10dp"
-                android:clickable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:src="@drawable/ic_list_black_24dp" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/writeDiary"
-
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="65dp"
-            android:layout_marginRight="65dp"
-            android:background="@drawable/thought_diary_list"
-            android:clickable="true"
-            android:focusable="true"
-            android:foreground="?android:attr/selectableItemBackground"
-            android:paddingEnd="8dp"
-            android:paddingStart="8dp"
-            android:paddingTop="50dp"
-            android:paddingBottom="50dp">
+            android:layout_height="match_parent"
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="215dp"
-                android:drawableTop="@drawable/icon_add_note_tab"
-                android:gravity="center"
-                android:fontFamily="@font/avenir_regular"
-                android:text="SHARE YOUR THOUGHTS"
-                android:textColor="#fff"
-                android:textSize="15sp" />
+            android:orientation="vertical"
+            android:paddingTop="40dp">
 
-
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="50dp"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:id="@+id/addIcon"
+            <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="30dp"
-                android:background="@drawable/ovalpurple"
-                android:clickable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:padding="4dp"
-                android:src="@drawable/icon_addition" />
-        </RelativeLayout>
+                android:orientation="horizontal">
 
-    </LinearLayout>
-    <!--<LinearLayout-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_alignParentEnd="true"-->
-        <!--android:orientation="horizontal">-->
+                <ImageView
+                    android:id="@+id/listIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:src="@drawable/ic_list_black_24dp" />
+            </RelativeLayout>
 
-        <!--<ImageView-->
-            <!--android:id="@+id/listIcon"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_alignParentEnd="true"-->
-            <!--android:layout_marginEnd="30dp"-->
-            <!--android:layout_marginBottom="10dp"-->
-            <!--android:clickable="true"-->
-            <!--android:focusable="true"-->
-            <!--android:foreground="?android:attr/selectableItemBackground"-->
-            <!--android:src="@drawable/ic_list_black_24dp" />-->
+            <ScrollView
+                android:id="@+id/horScroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp">
 
-    <!--</LinearLayout>-->
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
 
-    <!--<LinearLayout-->
-        <!--android:id="@+id/writeDiary"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_marginLeft="65dp"-->
-        <!--android:layout_marginRight="65dp"-->
-        <!--android:background="@drawable/thought_diary_list"-->
-        <!--android:clickable="true"-->
-        <!--android:focusable="true"-->
-        <!--android:foreground="?android:attr/selectableItemBackground"-->
-        <!--android:orientation="horizontal"-->
-        <!--android:paddingTop="110dp"-->
-        <!--android:paddingBottom="110dp">-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:fontFamily="@font/avenir_bold"
+                        android:text="My Thoughts"
+                        android:textSize="25sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                        android:id="@+id/writeDiary"
+                            android:layout_width="250dp"
+                            android:layout_height="400dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/thought_diary_list"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:paddingStart="8dp"
+                        android:paddingTop="90dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="80dp">
+
+                        <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="215dp"
+                        android:drawableTop="@drawable/td"
+                        android:fontFamily="@font/avenir_regular"
+                        android:gravity="center"
+                        android:text="SHARE YOUR THOUGHTS"
+                        android:textColor="#fff"
+                        android:textSize="15sp" />
 
 
-    <!--</LinearLayout>-->
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/writeDiary2"
+                            android:layout_width="250dp"
+                            android:layout_height="400dp"
+                            android:layout_marginEnd="15dp"
+                            android:background="@drawable/thought_diary_list_blue"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp">
+
+
+                            <RelativeLayout
+                                android:id="@+id/firstRow"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:orientation="horizontal"
+                                android:paddingTop="20dp">
+
+                                <LinearLayout
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/avenir_bold"
+                                        android:text="@string/date"
+                                        android:textAlignment="center"
+                                        android:textColor="#fff"
+                                        android:textSize="22sp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/avenir_regular"
+                                        android:text="@string/month"
+                                        android:textAlignment="center"
+                                        android:textColor="#fff"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/avenir_regular"
+                                        android:text="@string/year"
+                                        android:textAlignment="center"
+                                        android:textColor="#fff"
+                                        android:textSize="12sp" />
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:src="@drawable/icon_vertical_threedots"
+                                    />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/secondRow"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/firstRow"
+                                android:layout_marginTop="20dp">
+
+                                <ImageView
+                                    android:layout_width="250dp"
+                                    android:layout_height="150dp"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/td1" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_height="wrap_content"
+                                android:id="@+id/thirdRow"
+                                android:layout_width="wrap_content"
+                                android:layout_below="@id/secondRow"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="30dp"
+                                android:gravity="bottom">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:fontFamily="@font/avenir_bold"
+                                    android:text="@string/time"
+                                    android:textColor="@color/white" />
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/writeDiary3"
+                            android:layout_width="250dp"
+                            android:layout_height="400dp"
+                            android:layout_marginEnd="15dp"
+                            android:background="@drawable/thought_diary_list_yellow"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:paddingStart="8dp"
+                            android:paddingTop="90dp"
+                            android:paddingEnd="8dp"
+                            android:paddingBottom="80dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="215dp"
+                                android:drawableTop="@drawable/td"
+                                android:fontFamily="@font/avenir_regular"
+                                android:gravity="center"
+                                android:text="SHARE YOUR THOUGHTS"
+                                android:textColor="#fff"
+                                android:textSize="15sp" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/writeDiary4"
+                            android:layout_width="250dp"
+                            android:layout_height="400dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/thought_diary_list"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:paddingStart="8dp"
+                            android:paddingTop="90dp"
+                            android:paddingEnd="8dp"
+                            android:paddingBottom="80dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="215dp"
+                                android:drawableTop="@drawable/td"
+                                android:fontFamily="@font/avenir_regular"
+                                android:gravity="center"
+                                android:text="SHARE YOUR THOUGHTS"
+                                android:textColor="#fff"
+                                android:textSize="15sp" />
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </ScrollView>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/addIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="30dp"
+                    android:background="@drawable/ovalpurple"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:src="@drawable/icon_addition" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
 </RelativeLayout>

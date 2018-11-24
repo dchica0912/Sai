@@ -8,6 +8,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.widget.TextView;
+
 import june.delachica.com.sai.Modules.Chat.ChatbotFragment;
 import june.delachica.com.sai.DashboardFragment;
 import june.delachica.com.sai.Modules.Diary.DiaryFragment;
@@ -17,12 +19,21 @@ import june.delachica.com.sai.Modules.Settings.SettingsFragment;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
+    public static String language;
+    public static String serverResponse;
     private DrawerLayout drawer;
+
+    public static void postAIResponse() {
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        TextView textView = (TextView) findViewById(R.id.text);
+        String code = getIntent().getStringExtra("code");
+//        textView.setText(String.format("The true code is: %s", code));
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
